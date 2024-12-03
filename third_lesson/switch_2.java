@@ -24,7 +24,7 @@ public class switch_2 {
         matrix = new int[i][j];
         for (int z =0; z <matrix.length;z++){
             for(int h=0; h<matrix[z].length;h++ ){
-                System.out.print("Please key in the number row "+(z+1) +" and column "+ (h+1)+":");
+                System.out.print("Please key in the number row "+(z+1) +" and column "+ (h+1)+": ");
                 matrix  [z][h]=scan.nextInt();
             }
 
@@ -32,7 +32,7 @@ public class switch_2 {
 
         for (int z =0; z <matrix.length;z++){
             for(int h=0; h<matrix[z].length;h++ ){
-                System.out.print(matrix  [z][h]+"\t");
+                System.out.print(matrix  [z][h]+"  ");
                 
             }
             System.out.println("");
