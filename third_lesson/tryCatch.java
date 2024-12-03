@@ -18,6 +18,12 @@ public class tryCatch {
                         matrix[z][h] = scan.nextInt();
                     }
                 }
+                for (int z = 0; z < matrix.length; z++) {
+                    for (int h = 0; h < matrix[z].length; h++) {
+                        System.out.print(matrix[z][h] + "  ");
+                    }
+                    System.out.println();
+                }
             } else if (number == 2) {
                 matrix = new int[2][3];  
                 
@@ -29,17 +35,18 @@ public class tryCatch {
                           
                     }
                 }
+                for (int z = 0; z < matrix.length; z++) {
+                    for (int h = 0; h < matrix[z].length; h++) {
+                        System.out.print(matrix[z][h] + "  ");
+                    }
+                    System.out.println();
+                }
             } else {
                 System.out.println("Invalid input. Please choose either 1 or 2.");
-                return;
+                
             }
 
-            for (int z = 0; z < matrix.length; z++) {
-                for (int h = 0; h < matrix[z].length; h++) {
-                    System.out.print(matrix[z][h] + "  ");
-                }
-                System.out.println();
-            }
+            
 
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Array out of bounds! Please check your input. Details: " );
